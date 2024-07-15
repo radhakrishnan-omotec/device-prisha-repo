@@ -1,0 +1,96 @@
+Following are the metrics for the profile section
+
+
+1. general progress score 
+2. daily/weekly/monthly activity summary 
+3. activity completion rate 
+4. motor skills improvement 
+5. cognitive skills progress
+6. preferred activities
+7. adaptive adjustments (showing how the device is personalizing the experience)
+8.  Progress towards specific therapeutic goals set by healthcare professionals+ goals that are to be achieved now 
+
+
+
+Here is the review of the tables- 
+Table 1. 
+- Can we change the score subsections to- comprehension score, behavioural score and skills score
+Table 1,6 and 7  
+- I don't think the date is necessary here 
+Table 6,7 
+- How will the information be structured? because in categories like preferred activities or adjustments that the device has made, there will be multiple entries. So, will it be displayed in different rows? If not, we can change these tables into summaries of the preferred activity and device adjustments. 
+
+
+
+
+
+
+
+
+CREATE TABLE GENERAL_PROGRESS_SCORE (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ENGAGEMENT_LEVEL INTEGER NOT NULL,
+    ACTIVITIES_COMPLETED INTEGER NOT NULL,
+    BEHAVIOUR_SUMMARY TEXT NOT NULL,
+    TIPS_AND_FEEDBACK TEXT NOT NULL
+);
+
+CREATE TABLE ACTIVITY_SUMMARY (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ACTIVITY_NUM_WEEK INTEGER NOT NULL,
+    ACTIVITY_NUM_MONTH INTEGER NOT NULL,
+    TYPE_OF_ACTIVITIES TEXT NOT NULL
+);
+
+CREATE TABLE ACTIVITY_COMPLETION_RATE (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ACTIVITY_NUM_WEEK INTEGER NOT NULL,
+    ACTIVITY_NUM_MONTH INTEGER NOT NULL,
+    TYPE_OF_ACTIVITIES TEXT NOT NULL
+
+);
+
+CREATE TABLE MOTOR_SKILLS_IMPROVEMENT (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    COORDINATION TEXT NOT NULL,
+    REACTION_TIME TEXT NOT NULL,
+    FINE_MOTOR_SKILLS TEXT NOT NULL,
+    GROSS_MOTOR_SKILLS TEXT NOT NULL
+
+);
+
+CREATE TABLE COGNITIVE_SKILLS_PROGRESS (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ATTENTION_SPAN TEXT NOT NULL,
+    MEMORY_RECALL TEXT NOT NULL,
+    PROBLEM_SOLVING TEXT NOT NULL,
+    LANGUAGE_AND_COMMUNICATION TEXT NOT NULL,
+    MUSICAL_PATTERNS_RHYTHMS TEXT NOT NULL
+
+);
+
+CREATE TABLE PREFERRED_ACTIVITIES (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    TYPE_OF_ACTIVITY TEXT NOT NULL,
+    PREFFERED_INSTRUMENTS TEXT NOT NULL,
+    PREFEREED_SOUNDS TEXT NOT NULL,
+    FREQUENCY_OF_CHOOSING_FAVORITE_ACTIVITY INTEGER NOT NULL
+
+);
+
+CREATE TABLE ADAPTIVE_ADJUSTMENTS (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    MOOD_AND_BEHAVIOUR_CUSTOMISATIONS INTEGER NOT NULL,
+    MUSIC_ADJUSTMENTS TEXT NOT NULL,
+    ACTIVITY_COMPLEXITY_CHANGES INTEGER NOT NULL
+
+);
+
+CREATE TABLE SPECIFIC_THERAPEUTIC_GOALS_PROGRESS (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    SHORT_TERM_GOALS INTEGER NOT NULL,
+    LONG_TERM_GOALS TEXT NOT NULL,
+    POSSIBLE_CHALLENGES INTEGER NOT NULL,
+    ADVICE_FOR_CHALLENGES TEXT NOT NULL
+
+);
