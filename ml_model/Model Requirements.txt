@@ -1,12 +1,14 @@
 Model Requirements:
 *******************
-
-
+Personalised music playlist generator 
+Engagement and emotion detection 
 
 Input to the model
 ~~~~~~~~~~~~~~~~~~
+Age, behavioural patterns, severity of ASD, language skills/socialisation skills, classification of ASD, sensitivity to sound, music that the user prefers 
+Facial positioning, eye contact, facial expressions 
 
-
-
-What is Output the model
+Output of the model
 ~~~~~~~~~~~~~~~~~~~~~~~~
+A 10-song list of suggested music 
+Numerical and descriptive analysis of emotional state and engagement levels of the user 
