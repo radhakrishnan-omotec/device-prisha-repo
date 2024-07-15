@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/padam/Downloads/Music Therapy Profile Form DB Table/ProfileDB.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser pragmas structure query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="2765"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,20:mainADAPTIVE_ADJUSTMENTS"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="ACTIVITY_SUMMARY" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="243"/><column index="3" value="259"/><column index="4" value="235"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="ADAPTIVE_ADJUSTMENTS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="61"/><column index="2" value="300"/><column index="3" value="243"/><column index="4" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="COGNITIVE_SKILLS_PROGRESS" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="197"/><column index="3" value="192"/><column index="4" value="216"/><column index="5" value="300"/><column index="6" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="GENERAL_PROGRESS_SCORE" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="225"/><column index="3" value="266"/><column index="4" value="255"/><column index="5" value="236"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Sample" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="74"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO ACTIVITY_SUMMARY (ACTIVITY_NUM_WEEK, ACTIVITY_NUM_MONTH, TYPE_OF_ACTIVITIES)
+VALUES (5, 20, 'Physical');
+
+INSERT INTO ACTIVITY_COMPLETION_RATE (ACTIVITY_NUM_WEEK, ACTIVITY_NUM_MONTH, TYPE_OF_ACTIVITIES)
+VALUES (4, 18, 'Cognitive');
+
+INSERT INTO MOTOR_SKILLS_IMPROVEMENT (COORDINATION, REACTION_TIME, FINE_MOTOR_SKILLS, GROSS_MOTOR_SKILLS)
+VALUES ('Improved', 'Fast', 'Excellent', 'Good');
+
+
+INSERT INTO COGNITIVE_SKILLS_PROGRESS (ATTENTION_SPAN, MEMORY_RECALL, PROBLEM_SOLVING, LANGUAGE_AND_COMMUNICATION, MUSICAL_PATTERNS_RHYTHMS)
+VALUES ('Long', 'Strong', 'Advanced', 'Fluent', 'Excellent');
+
+
+INSERT INTO PREFERRED_ACTIVITIES (TYPE_OF_ACTIVITY, PREFFERED_INSTRUMENTS, PREFEREED_SOUNDS, FREQUENCY_OF_CHOOSING_FAVORITE_ACTIVITY)
+VALUES ('Playing', 'Guitar', 'Melodic', 15);
+
+
+INSERT INTO ADAPTIVE_ADJUSTMENTS (MOOD_AND_BEHAVIOUR_CUSTOMISATIONS, MUSIC_ADJUSTMENTS, ACTIVITY_COMPLEXITY_CHANGES)
+VALUES (3, 'Increased tempo', 2);
+
+
+
+INSERT INTO SPECIFIC_THERAPEUTIC_GOALS_PROGRESS (SHORT_TERM_GOALS, LONG_TERM_GOALS, POSSIBLE_CHALLENGES, ADVICE_FOR_CHALLENGES)
+VALUES (5, 'Complete a music piece', 2, 'Practice regularly');</sql><current_tab id="0"/></tab_sql></sqlb_project>
